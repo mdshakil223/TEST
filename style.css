@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px;
+  background: #f9f9f9;
+  color: #333;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+form input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form input[type="file"] {
+  flex-basis: 220px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px;
+  font-size: 0.9rem;
+}
+form button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#submitBtn {
+  background-color: #007bff;
+  color: white;
+}
+#submitBtn:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+#cancelEditBtn {
+  background-color: #dc3545;
+  color: white;
+  display: none;
+}
+#cancelEditBtn:hover {
+  background-color: #c82333;
+}
+#submitBtn:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  margin-top: 25px;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  vertical-align: middle;
+}
+th {
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+}
+td.actions {
+  display: flex;
+  gap: 8px;
+}
+td.actions button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  flex: 1;
+  transition: background-color 0.3s ease;
+}
+button.view {
+  background-color: #28a745;
+}
+button.view:hover {
+  background-color: #218838;
+}
+button.edit {
+  background-color: #ffc107;
+  color: #212529;
+}
+button.edit:hover {
+  background-color: #e0a800;
+}
+button.delete {
+  background-color: #dc3545;
+}
+button.delete:hover {
+  background-color: #c82333;
+}
+span.date-line {
+  display: block;
+  font-weight: 600;
+}
+span.time-line {
+  font-size: 0.85rem;
+  color: #666;
+}
+td:nth-child(1) {
+  width: 40px;
+  text-align: center;
+}

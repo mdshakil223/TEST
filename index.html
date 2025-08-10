@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Notice Upload</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Admin Notice Upload</h1>
+
+  <form id="noticeForm">
+    <input type="text" id="title" placeholder="Notice Title" required />
+    <input type="file" id="pdfFile" accept="application/pdf" />
+    <input type="hidden" id="editKey" />
+    <button type="submit" id="submitBtn">Publish Notice</button>
+    <button type="button" id="cancelEditBtn" style="display:none;">Cancel Edit</button>
+  </form>
+
+  <table id="noticeTable">
+    <thead>
+      <tr>
+        <th>SN</th>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <!-- Firebase SDKs (compat versions for firebase global namespace) -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-storage-compat.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
